@@ -34,7 +34,7 @@
 	<script>
 	    $(document).ready(function(){
 			$("button").click(function(){
-			   var t = $('#temp').val();//celsius
+			   var t = $('#temp').val();
 			   var u = $('#unit').val();
 			   
 			   if (!isValidTemperature(t)) {
@@ -43,7 +43,7 @@
 			   
 		  	var result = convertTemperature(t, u);
 			   
-			   alert("Temperature is "+result.temperature+" in "+result.unit);
+			  $("#result").html("Temperature is " + result.temperature + " in " + result.unit)
 			});
 		});
 
